@@ -1,0 +1,7 @@
+{
+   "baseUrl": "https://magento2-demo.magebit.com",
+   "firstName": "Emma",
+   "lastName": "Watson",
+   "searchCategory": "backpack",
+   "searchItem" : "Driven Backpack"
+}
