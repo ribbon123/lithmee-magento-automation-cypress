@@ -8,7 +8,7 @@ class DashBoardPage{
 
     searchProduct(productName){
         cy.get('#search').type(productName);
-        cy.get('button[title="Search"]').click();
+        cy.get('button[title="Search"]').should('be.visible').click();
     }
 
     selectProduct(productName){
@@ -25,11 +25,7 @@ class DashBoardPage{
     }
 
     getCartQuantity(){
-        return cy.get('#qty');
-    }
-
-    clickEditItemIcon(){
-        cy.get('a[title="Edit item"]').click();
+        return cy.get('input#qty');
     }
 
     editProductQuantity(quantity){
@@ -41,7 +37,7 @@ class DashBoardPage{
         cy.get('a.action.viewcart').click();
     }
 
-     clickEditItemLink(){
+     clickEditItem(){
         cy.get('a[title="Edit item parameters"]').click();
     }
 
@@ -51,10 +47,6 @@ class DashBoardPage{
 
     clickRemoveItem(){
         cy.get('a[title="Remove item"]').click();
-    }
-
-    getNoCartItemMessage(){
-        return cy.contains('You have no items');
     }
 
     getRegisterUserSuccessMessage(){
@@ -68,7 +60,6 @@ class DashBoardPage{
     clickSignOut(){
         cy.contains('a', 'Sign Out').click()
     }
-   
 }
 
 export default DashBoardPage;

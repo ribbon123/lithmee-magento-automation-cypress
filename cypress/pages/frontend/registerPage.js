@@ -34,18 +34,6 @@ class RegisterPage{
         this.fillConfirmPassword(confirmPassword);
         this.clickCreateAccount();
     }
-
-    getDashBoardOpenSuccessMessage() {
-        return cy.contains('Thank you for registering with Main Website Store.');
-    }
-
-    clickOption(){
-        cy.get('.action.switch').contains('Change').click();
-    }
-
-    clickSignOut(){
-         cy.contains('a', 'Sign Out').should('be.visible').click();
-    }
 }
 
 export default RegisterPage;

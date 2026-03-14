@@ -38,7 +38,7 @@ describe('Product and Cart Testing', () => {
 
       //Update Quantity
       dashBoardPage.clickViewAndEditCart();
-      dashBoardPage.clickEditItemLink();
+      dashBoardPage.clickEditItem();
       dashBoardPage.editProductQuantity("2");
       dashBoardPage.getCartQuantity().should('have.value', '2');
       dashBoardPage.clickUpdateCart();
@@ -47,5 +47,4 @@ describe('Product and Cart Testing', () => {
       dashBoardPage.clickRemoveItem();
       
     })
-
 })
