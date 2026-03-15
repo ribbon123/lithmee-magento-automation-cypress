@@ -1,4 +1,4 @@
-### Magento Cypress Automation
+### Lithmee Ranasinghe - Magento Cypress Automation
 
 This project contains automated UI tests for the Magento website using Cypress. The framework follows the Page Object Model (POM) design pattern to maintain a clean, scalable, and maintainable test structure. It is developed using JavaScript.
 
@@ -31,7 +31,7 @@ Contains Page Object Model classes with locators and page methods.
 
 Contains all automated test scripts.
 
-Test files use the page classes from the **pages/** folder to perform actions and validations.
+Test files use the page classes from the `pages/` folder to perform actions and validations.
 
 **test-data/**
 
@@ -39,5 +39,5 @@ Contains external JSON files with test data used by the tests.
 
 Files included:
 
-* **admintestdata.json** – Test data for admin-related tests
-* **frontendtestdata.json** – Test data for frontend store tests
+* `admintestdata.json` – Test data for admin-related tests
+* `frontendtestdata.json` – Test data for frontend store tests
