@@ -20,7 +20,7 @@ This project contains automated UI tests for the Magento website using Cypress. 
 └── README.md
 ```
 
-Folder Details
+#### Folder Details
 
 **pages/**
 Contains Page Object Model classes with locators and page methods.
@@ -40,3 +40,14 @@ Files included:
 
 * `admintestdata.json` – Test data for admin-related tests
 * `frontendtestdata.json` – Test data for frontend store tests
+
+#### Best Practices Followed
+
+* Page Object Model
+* Clean reusable code
+* Hooks
+* External test data
+* Dynamic data generation
+* No hardcoded waits
+* Meaningful Assertions
+  
