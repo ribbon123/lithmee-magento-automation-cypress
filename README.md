@@ -11,15 +11,16 @@ This project contains automated UI tests for the Magento website using Cypress. 
 │
 ├── tests/               # Test scripts
 │
-├── test-data/           # Test data files
-│   ├── admintestdata.json
-│   └── frontendtestdata.json
+├── cypress/
+│   └── fixtures/        # Test data files
+│       ├── admintestdata.json
+│       └── frontendtestdata.json
 │
 ├── cypress.config.js    # Cypress configuration
 └── README.md
 ```
- 
-#### Folder Details
+
+Folder Details
 
 **pages/**
 Contains Page Object Model classes with locators and page methods.
@@ -28,13 +29,11 @@ Contains Page Object Model classes with locators and page methods.
 * **frontend/** – Page classes for store functionalities such as register, signin, signout, search product, add product, update product and remove product.
 
 **tests/**
-
 Contains all automated test scripts.
 
 Test files use the page classes from the `pages/` folder to perform actions and validations.
 
-**test-data/**
-
+**cypress/fixtures/**
 Contains external JSON files with test data used by the tests.
 
 Files included:
