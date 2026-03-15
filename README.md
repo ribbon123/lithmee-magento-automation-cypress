@@ -28,11 +28,13 @@ Contains Page Object Model classes with locators and page methods.
 * **frontend/** – Page classes for store functionalities such as register, signin, signout, search product, add product, update product and remove product.
 
 **tests/**
+
 Contains all automated test scripts.
 
 Test files use the page classes from the **pages/** folder to perform actions and validations.
 
 **test-data/**
+
 Contains external JSON files with test data used by the tests.
 
 Files included:
