@@ -8,7 +8,7 @@ class DashBoardPage{
 
     searchProduct(productName){
         cy.get('#search').type(productName);
-        cy.get('button[title="Search"]').should('be.visible').click();
+        cy.get('#search').type('{enter}');
     }
 
     selectProduct(productName){
@@ -16,7 +16,7 @@ class DashBoardPage{
     }
 
     addToCart(){
-        cy.get('#product-addtocart-button').click();
+        cy.get('#product-addtocart-button').should('be.visible').click();
     }
 
     clickCartIcon(){
@@ -25,16 +25,15 @@ class DashBoardPage{
     }
 
     getCartQuantity(){
-        return cy.get('input#qty');
+        return cy.get('#qty');
     }
 
     editProductQuantity(quantity){
-        cy.get('#qty').clear();
-        cy.get('#qty').type(quantity);
+       cy.get('#qty').invoke('val', quantity).trigger('change');
     }
 
     clickViewAndEditCart(){
-        cy.get('a.action.viewcart').click();
+        cy.contains('a', 'View and Edit Cart').click();
     }
 
      clickEditItem(){
@@ -46,7 +45,7 @@ class DashBoardPage{
     }
 
     clickRemoveItem(){
-        cy.get('a[title="Remove item"]').click();
+        cy.contains('a','Remove item').click();
     }
 
     getRegisterUserSuccessMessage(){
@@ -54,11 +53,11 @@ class DashBoardPage{
     }
 
     clickOptions(){
-        cy.contains('button', 'Change').click();
+        cy.contains('button','Change').click();
     }
 
     clickSignOut(){
-        cy.contains('a', 'Sign Out').click()
+        cy.contains('a','Sign Out').click();
     }
 }
 
